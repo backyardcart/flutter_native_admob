@@ -72,7 +72,7 @@ class FlutterNativeAdmobPlugin(
 
 class ViewFactory : PlatformViewFactory(StandardMessageCodec.INSTANCE) {
 
-  override fun create(context: Context, id: Int, params: Any?): PlatformView {
+  override fun create(context: Context, viewId: Int, params: Any?): PlatformView {
     return NativePlatformView(context, id, params)
   }
 }

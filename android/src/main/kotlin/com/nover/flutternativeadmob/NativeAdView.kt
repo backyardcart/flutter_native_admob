@@ -18,7 +18,7 @@ enum class NativeAdmobType {
 }
 
 class NativeAdView @JvmOverloads constructor(
-    context: Context,
+    context: Context?,
     type: NativeAdmobType,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0

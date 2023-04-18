@@ -78,7 +78,7 @@ class ViewFactory : PlatformViewFactory(StandardMessageCodec.INSTANCE) {
 }
 
 class NativePlatformView(
-    context: Context,
+    context: Context?,
     id: Int,
     params: Any?
 ) : PlatformView {

@@ -1,7 +1,6 @@
 package com.nover.flutternativeadmob
 
 import android.content.Context
-import io.flutter.embedding.engine.plugins.FlutterPlugin;
 
 import android.content.res.Resources
 import android.graphics.drawable.Drawable

@@ -40,7 +40,7 @@ android {
 }
 
 ext {
-    flutter_version = '3.0.0' // Replace with your desired Flutter version number
+    flutter_version = '2.5.0' // Replace with your desired Flutter version number
 }
 
 dependencies {

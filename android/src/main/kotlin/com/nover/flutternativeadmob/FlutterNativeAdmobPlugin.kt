@@ -1,6 +1,7 @@
 package com.nover.flutternativeadmob
 
 import android.content.Context
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
 
 import android.content.res.Resources
 import android.graphics.drawable.Drawable
@@ -19,7 +20,7 @@ import io.flutter.plugin.platform.PlatformView
 import io.flutter.plugin.platform.PlatformViewFactory
 
 
-class FlutterNativeAdmobPlugin(
+class FlutterNativeAdmobPlugin: FlutterPlugin(
     private val context: Context,
     private val messenger: BinaryMessenger
 ) : MethodCallHandler {

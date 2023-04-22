@@ -9,18 +9,19 @@ import android.graphics.drawable.GradientDrawable
 import android.view.View
 import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.RequestConfiguration
++import androidx.annotation.NonNull;
++import io.flutter.embedding.android.FlutterActivity;
++import io.flutter.embedding.engine.FlutterEngine;
 import io.flutter.plugin.common.BinaryMessenger
-import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
-import io.flutter.plugin.common.MethodChannel.MethodCallHandler
-import io.flutter.plugin.common.MethodChannel.Result
++import io.flutter.plugins.GeneratedPluginRegistrant;
 import io.flutter.plugin.common.PluginRegistry.Registrar
 import io.flutter.plugin.common.StandardMessageCodec
 import io.flutter.plugin.platform.PlatformView
 import io.flutter.plugin.platform.PlatformViewFactory
 
 
-class FlutterNativeAdmobPlugin(
+class FlutterNativeAdmobPlugin: FlutterActivity()(
     private val context: Context,
     private val messenger: BinaryMessenger
 ) : MethodCallHandler {

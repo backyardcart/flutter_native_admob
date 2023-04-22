@@ -20,7 +20,7 @@ import io.flutter.plugin.platform.PlatformView
 import io.flutter.plugin.platform.PlatformViewFactory
 
 
-class FlutterNativeAdmobPlugin: FlutterPlugin(
+class FlutterNativeAdmobPlugin(
     private val context: Context,
     private val messenger: BinaryMessenger
 ) : MethodCallHandler {

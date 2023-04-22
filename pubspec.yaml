@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_embedding:
+    sdk: flutter
+    version: ^2.0.0
 
 flutter:
   plugin:

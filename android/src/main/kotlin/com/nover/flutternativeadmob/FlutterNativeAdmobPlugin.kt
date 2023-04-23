@@ -25,9 +25,6 @@ class FlutterNativeAdmobPlugin(
     messenger: BinaryMessenger
 ) : MethodCallHandler {
 
-  private val context: Context = context
-  private val messenger: BinaryMessenger = messenger
-
   enum class CallMethod {
     initController, disposeController, setTestDeviceIds
   }
@@ -55,7 +52,7 @@ class FlutterNativeAdmobPlugin(
     when (CallMethod.valueOf(call.method)) {
       CallMethod.initController -> {
         (call.argument<String>("controllerID"))?.let {
-          NativeAdmobControllerManager.createController(it, messenger, context)
+          NativeAdmobControllerManager.createController(it, registrar.messenger(), registrar.context())
         }
       }
 

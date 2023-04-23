@@ -52,7 +52,7 @@ class FlutterNativeAdmobPlugin(
     when (CallMethod.valueOf(call.method)) {
       CallMethod.initController -> {
         (call.argument<String>("controllerID"))?.let {
-          NativeAdmobControllerManager.createController(it, registrar.messenger(), registrar.context())
+          NativeAdmobControllerManager.createController(it, messenger, context)
         }
       }
 

@@ -21,9 +21,12 @@ import io.flutter.plugin.platform.PlatformViewFactory
 
 
 class FlutterNativeAdmobPlugin(
-    context: Context,
-    messenger: BinaryMessenger
-) : MethodCallHandler {
+    _context: Context,
+    _messenger: BinaryMessenger
+) : MethodChannel.MethodCallHandler {
+
+  private val context: Context = _context
+  private val messenger: BinaryMessenger = _messenger
 
   enum class CallMethod {
     initController, disposeController, setTestDeviceIds

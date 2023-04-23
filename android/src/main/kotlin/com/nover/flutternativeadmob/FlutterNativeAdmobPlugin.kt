@@ -23,7 +23,7 @@ import io.flutter.plugin.platform.PlatformViewFactory
 class FlutterNativeAdmobPlugin(
     _context: Context,
     _messenger: BinaryMessenger
-) : MethodChannel.MethodCallHandler {
+) : MethodCallHandler {
 
   private val context: Context = _context
   private val messenger: BinaryMessenger = _messenger
